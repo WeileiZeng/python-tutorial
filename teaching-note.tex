@@ -1,8 +1,23 @@
 \def\rank{\mathop{\rm rank}}
 \def\wgt{\mathop{\rm wgt}}
 \def\lc{\mathop{\rm lc}}
+\newcommand{\code}[1]{\texttt{#1}}
 \documentclass[aps,prb,12pt,tightenlines,%
 notitlepage,longbibliography]{revtex4-1}
+
+%left alighment of title
+\usepackage{etoolbox}
+\patchcmd{\section}
+  {\centering}
+  {\raggedright}
+  {}
+  {}
+\patchcmd{\subsection}
+  {\centering}
+  {\raggedright}
+  {}
+  {}
+
 
 \usepackage{hyperref}
 \usepackage{graphicx}
@@ -39,7 +54,11 @@ solve problem in the sense of computer science.
 
 \textbf{Class Meetings}:
 
-Sunday 2:30-4:30pm; Monday 4:30-6:30pm. Mar 31-Jun 10
+regular meeting on Sunday 2:30-4:30pm;
+
+to be scheduled for Monday 4:30-6:30pm.
+
+Mar 31-Jun 10
 
 20 lessons in 10 weeks, 2 hours for each lesson. In each lesson, the
 first half will focus on the lecture, and the second half for practice
@@ -70,7 +89,7 @@ The most powerful tool I have ever used is \href{https://www.google.com/}{Google
 We can start learning programming at any level, as long as you have
 stable access to a laptop for practicing.
 
-
+\newpage
 \textbf{Tentative content}:
 
 The following topics covers the basics in Python.
@@ -100,12 +119,21 @@ More topics to be determined
   Graphics user interface(GUI).
 \item
   Image/data processing
+\item
+  Internet communication, (TCP/IP)
+\item
+  Editors (emacs), window manager (tmux), typesetting format (latex,
+  markdown)
+\item
+  Game engine (Unity)
+\end{enumerate}
 
-  \end{enumerate}
-
-
+\newpage
 \section{Lecture notes}
-\subsection{Lecture 1 Introduction}
+
+\tableofcontents
+
+\subsection{Lecture 1, Session 1, Mar 31, Introduction}
 Introduction to python
 
 Course outline
@@ -114,7 +142,43 @@ Sample codes and projects
 
 Environment setup (Installation, Editor, GitHub)
 
-HelloWrold!
+HelloWorld!
+
+\subsection{Lecture 2, Session 1}
+start at assignment
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{exercise}
+For each exercise, please create a single \code{.py} file, e.g. \code{session1\_1.py}. Please put
+all your files in one or several folders.
+\subsection{session 1}
+\begin{enumerate}
+  \item
+    create folder \texttt{firstFolder}, create file
+    \texttt{first\_file.txt}, write your name and date into that file;
+    Copy this file to \texttt{second\_file.txt}, and write
+    ``helloworld'' into the second file.
+  \item
+    create helloworld.py; run it in python and shell respectively
+  \item
+    assign some value to $a$ and $b$, calculate $c=a+b$ and print the
+    result in the form ``c=[value of c]''
+  \item
+    create a file to check the priority of \code{+-*/=}
+  \item
+    assign value of a,b,print them; switch value of them, and print
+    the result
+
+  \item
+    prepare a conversation between Jack and Rose, 5 sentence each
+\end{enumerate}
+
+\subsection{session 2}
+\begin{enumerate}
+\item
+  warmup exersice
+\end{enumerate}
+
 
 \section{benchmark problem set(to be updated)}
 These problem ensure you to understand various concepts in
