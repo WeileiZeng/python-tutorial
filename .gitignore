@@ -6,3 +6,5 @@ teaching-note.toc
 teaching-noteNotes.bib
 *.py~
 *.pyc
+auto/teaching-note.el
+*.pyc
